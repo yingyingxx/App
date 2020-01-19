@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">AppDailyGoals</string>
+    <string name="othergoalstring">othergoal</string>
+    <string name="Appname">DailyGoals</string>
+    <string name="Date">CurrentDate</string>
+    <string name="firstgoal">firstgoaltext</string>
+    <string name="othergoal">othergoaltext</string>
+    <string name="icontodostring">icontodo</string>
+    <string name="iconkalender">Kalender</string>
 </resources>

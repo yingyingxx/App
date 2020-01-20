@@ -7,4 +7,11 @@
     <string name="othergoal">othergoaltext</string>
     <string name="icontodostring">icontodo</string>
     <string name="iconkalender">Kalender</string>
+    <string name="seriesString">Current Series:</string>
+    <string name="seriesPoints">pts</string>
+    <string name="goalNameString">Name</string>
+    <string name="motivationString">Motivation</string>
+    <string name="notificationString">Allow Notification</string>
+    <string name="cancelString">Cancel</string>
+    <string name="saveString">Save</string>
 </resources>

@@ -14,6 +14,7 @@
         <!--header-->
         <include layout="@layout/header" />
 
+    <!--buttom_navi-->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/design_navigation_view"
         android:layout_width="match_parent"
@@ -21,7 +22,7 @@
         android:layout_alignParentBottom="true"
         app:menu="@menu/footer" />
 
-
+    <!--main-->
     <RelativeLayout
         android:id="@+id/main"
         android:layout_width="fill_parent"

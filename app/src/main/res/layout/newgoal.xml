@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:clickable="false"
+    tools:context=".NewGoal"
+    tools:ignore="DuplicateIds">
+
+    <!--header-->
+    <include layout="@layout/header" />
+
+    <!--buttom_navi-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/design_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/footer" />
+
+    <!--main-->
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@menu/footer"
+        android:layout_below="@id/header"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <TextView
+            android:id="@+id/goalNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/goalNameString"
+            android:textColor="#333534"
+            android:textSize="18sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goalNameView"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/bg_calen">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/motivationView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText1"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/motivationString"
+            android:textColor="#333534"
+            android:textSize="18sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/motivationView"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/bg_calen">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/notificationView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText2"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/notificationString"
+            android:textColor="#333534"
+            android:textSize="18sp" />
+
+        <Switch
+            android:id="@+id/switch3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText2"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@+id/notificationView" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notificationView"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/bg_calen">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttoncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText3"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_toStartOf="@+id/buttonsave"
+            android:text="@string/cancelString" />
+
+        <Button
+            android:id="@+id/buttonsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText3"
+            android:layout_alignEnd="@id/editText3"
+            android:layout_alignParentEnd="false"
+            android:layout_marginTop="30dp"
+            android:text="@string/saveString" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -31,12 +31,23 @@
         android:layout_below="@id/header"
         app:layout_constraintTop_toBottomOf="@+id/header">
 
+        <!--iconname-->
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="60dp"
+            app:srcCompat="@drawable/ic_action_label"
+            tools:ignore="VectorDrawableCompat" />
+
         <TextView
             android:id="@+id/goalNameView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
-            android:layout_marginStart="60dp"
+            android:layout_marginStart="50dp"
             android:layout_marginTop="60dp"
             android:text="@string/goalNameString"
             android:textColor="#333534"
@@ -47,7 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/goalNameView"
-            android:layout_marginStart="60dp"
+            android:layout_marginStart="50dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="15dp"
             android:background="@drawable/bg_calen">
@@ -59,12 +70,23 @@
         </com.google.android.material.textfield.TextInputLayout>
 
 
+        <!--motivation-->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_action_motivation"
+            tools:ignore="VectorDrawableCompat"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/editText1"/>
+
         <TextView
             android:id="@+id/motivationView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/editText1"
-            android:layout_marginStart="60dp"
+            android:layout_marginStart="50dp"
             android:layout_marginTop="30dp"
             android:text="@string/motivationString"
             android:textColor="#333534"
@@ -75,7 +97,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/motivationView"
-            android:layout_marginStart="60dp"
+            android:layout_marginStart="50dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="15dp"
             android:background="@drawable/bg_calen">
@@ -86,12 +108,24 @@
                 android:visibility="invisible" />
         </com.google.android.material.textfield.TextInputLayout>
 
+
+        <!--iconnotification-->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_action_bell"
+            tools:ignore="VectorDrawableCompat"
+            android:layout_below="@+id/editText2"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="15dp"/>
+
         <TextView
             android:id="@+id/notificationView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/editText2"
-            android:layout_marginStart="60dp"
+            android:layout_marginStart="50dp"
             android:layout_marginTop="30dp"
             android:text="@string/notificationString"
             android:textColor="#333534"
@@ -111,7 +145,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/notificationView"
-            android:layout_marginStart="60dp"
+            android:layout_marginStart="50dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="15dp"
             android:background="@drawable/bg_calen">
@@ -130,7 +164,11 @@
             android:layout_marginTop="30dp"
             android:layout_marginEnd="30dp"
             android:layout_toStartOf="@+id/buttonsave"
-            android:text="@string/cancelString" />
+            android:background="@drawable/bg_cancel"
+            android:text="@string/cancelString"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/buttonsave"
@@ -140,7 +178,11 @@
             android:layout_alignEnd="@id/editText3"
             android:layout_alignParentEnd="false"
             android:layout_marginTop="30dp"
-            android:text="@string/saveString" />
+            android:background="@drawable/bg_save"
+            android:text="@string/saveString"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
 
     </RelativeLayout>
 
